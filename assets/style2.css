@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap');
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .col-25 {
+    flex: 25%;
+  }
+  
+  .col-50 {
+    flex: 50%;
+  }
+  
+  .col-75 {
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  .container {
+    background-color:  rgb(17, 14, 14);
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  h3, h4, p, b {
+    color: grey;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+    color: grey;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #0d2b0f;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 50%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .container a {
+    text-decoration: none;
+    color: green;
+  }
+  
+  .btn:hover {
+    background-color: green;
+  }
+  
+  span.price {
+    color: grey;
+    float: right;
+  }
+  
+  
+  @media (max-width: 700px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+    .btn {
+      width: auto;
+    }
+  }
